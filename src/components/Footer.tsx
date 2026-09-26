@@ -3,7 +3,7 @@ import logo from "../assets/logo-text.png";
 const Footer = () => {
     return (
         <footer className="border border-gray-100 bg-white px-4 py-3">
-            <div className=" flex justify-around items-center mx-auto  ">
+            <div className=" flex justify-between items-center mx-auto ">
                 <div>
                     <img src={logo} alt="DevStack" className="mx-auto md:mx-0"/>
                     <p className="text-gray-500 text-sm text-center md:text-start ">Curated tools, technologies, and resources for developers building modern software.</p>
