@@ -9,7 +9,7 @@ const Navbar = () => {
             <button className="md:hidden cursor-pointer" onClick={() => setMenu(!menu)}>
                 <RxHamburgerMenu />
             </button>
-            <img className="md:static absolute left-1/2 transform -translate-x-1/2 md:translate-x-0 md:w-28" src={logo} alt="Devstack" />
+            <img className="md:static absolute left-1/2 transform -translate-x-1/2 md:translate-x-0  md:w-28" src={logo} alt="Devstack" />
             <ul className="hidden md:flex gap-3 items-center text-xs text-gray-500 ">
                 <li className="cursor-pointer hover:text-pink-500">Home</li>
                 <li className="cursor-pointer hover:text-pink-500">Technologies</li>
