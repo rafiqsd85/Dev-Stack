@@ -1,32 +1,27 @@
-# React + TypeScript + Vite
+# Project Name: DevStack
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## About
+DevStack is a simple platform that helps developers explore useful tools, technologies, and resources in one place. These are selected based on the technologies developers need.
 
-Currently, two official plugins are available:
+## Used Technologies
+- React
+- TypeScript
+- Tailwind CSS
+- React Icons
+- DaisyUI
+- JSON 
+- Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- Explore Technologies
+- Selected Technologies
+- Responsive Design
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### Questions Answer
+- 1. JSX is systax that write HTML code inside javascript and typescript.It make react code easier to write and read.
+- 2.Props are used pass data from one component to another component.State is store data in same component.
+- 3.usestate is used to store and manage data in a component.In this project ,I used usestate to store technologies and selected technologies.
+- 4.useEffect is used to performs side effect in a components.In this project,I used useEffect to fetch data from json .
+- 5. Key is used to identify each item in a list.
+- 6.Conditional rendering means showing different UI based on a condition.In this project,I used in add to stack button.
+- 7.Pass data from a parent component to a child component using props and child send back to parent using function.
