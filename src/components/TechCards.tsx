@@ -8,31 +8,31 @@ interface TechCardsProps{
 const getBadgeColor = (badge: string): string => {
   switch (badge) {
     case "Popular":
-      return "bg-pink-100 text-pink-700";
+      return "bg-pink-100 text-pink-500";
     case "Versatile":
-      return "bg-emerald-100 text-emerald-700";
+      return "bg-emerald-100 text-emerald-500";
     case "Fast":
-      return "bg-orange-100 text-orange-700";
+      return "bg-orange-100 text-orange-500";
     case "SSR / Edge":
-      return "bg-violet-100 text-violet-700";
+      return "bg-violet-100 text-violet-500";
     case "Standard":
-      return "bg-sky-100 text-sky-700";
+      return "bg-sky-100 text-sky-500";
     case "Top SQL":
-      return "bg-blue-100 text-blue-700";
+      return "bg-blue-100 text-blue-500";
     case "Modern":
-      return "bg-cyan-100 text-cyan-700";
+      return "bg-cyan-100 text-cyan-500";
     case "Containers":
-      return "bg-amber-100 text-amber-700";
+      return "bg-cyan-100 text-cyan-500";
     case "Essential":
-      return "bg-indigo-100 text-indigo-700";
-    case "NoSQL":
-      return "bg-green-100 text-green-700";
+      return "bg-cyan-100 text-cyan-500";
+    case "Ubiquitous":
+      return "bg-yellow-100 text-yellow-500";
     case "Cache":
-      return "bg-red-100 text-red-700";
+      return "bg-red-100 text-red-500";
     case "Robust":
-      return "bg-fuchsia-100 text-fuchsia-700";
+      return "bg-cyan-100 text-cyan-500";
     default:
-      return "bg-gray-100 text-gray-700";
+      return "bg-gray-100 text-gray-500";
   }
 };
 
@@ -42,7 +42,7 @@ const TechCards = ({tech,onAdd,isSelected}:TechCardsProps) => {
         <div className="border-2 border-gray-200 rounded-xl p-4 bg-white hover:bg-gray-100">
             <div className="flex justify-between items-center">
                 <img src={tech.icon} alt={tech.name} className="w-10 h-12 object-contain"/>
-                <span className={`${getBadgeColor(tech.badge)} text-xs px-2 py-1 font-semibold`}>{tech.badge}</span>
+                <span className={`${getBadgeColor(tech.badge)} text-xs px-2 py-1 font-semibold rounded-full`}>{tech.badge}</span>
             </div>
             <h3 className="text-xl font-bold mt-4">{tech.name}</h3>
             <p className="text-gray-600 text-sm mt-2"> {tech.description}</p>

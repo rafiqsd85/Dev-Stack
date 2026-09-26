@@ -3,6 +3,7 @@ import { useEffect,useState } from "react";
 import TechCards from "./TechCards";
 import Stackbox from "./Stackbox";
 import type { Technology } from "../type/Card";
+import { toast } from "react-toastify";
 
 const Exploration = () => {
     const [technologies, setTechnologies] = useState<Technology[]>([]);
@@ -17,13 +18,16 @@ const Exploration = () => {
     }, []);
     const handleAdd = (tech:Technology) => {
         setSelectedTechnologies([...selectedTechnologies, tech]);
+        toast.success(`${tech.name} Added to stack.`);
     };
     const handleRemove = (id: string) => {
         const newitem=selectedTechnologies.filter((tech) => tech.id !== id);
         setSelectedTechnologies(newitem);
+        toast.error("Remove from stack");
     };
     const handleRemoveAll = () => {
         setSelectedTechnologies([]);
+        toast.info("Technologies are removed");
     }
 
     return (
